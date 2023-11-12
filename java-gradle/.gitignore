@@ -1,0 +1,11 @@
+.DS_Store
+.gradle
+.vscode
+.idea
+app/build/
+app/src/test/resources
+.gradle
+.idea
+.vscode
+.DS_Store
+/app/.DS_Store
