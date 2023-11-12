@@ -1,0 +1,17 @@
+{
+  "name": "lambdatests",
+  "version": "1.0.0",
+  "description": "Test Automation for Lambda ToDo Lists",
+  "main": "index.js",
+  "devDependencies": {
+    "cypress": "^13.5.0"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "Mika Sue",
+  "license": "MIT"
+}
