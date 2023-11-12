@@ -27,12 +27,12 @@ public class AppTest {
        driver.quit();
    }
 
-    @Test void VerifyTitle() throws InterruptedException {
+    @Test void VerifyTitle() {
         String title = "Sample page - lambdatest.com";
         assertEquals(title, driver.getTitle());
     }
 
-    @Test void AddToDo() throws InterruptedException {
+    @Test void AddToDo() {
        String todoText = "Clean Hall Closet";
         driver.findElement(By.id("sampletodotext")).sendKeys(todoText);
         driver.findElement(By.id("addbutton")).click();
@@ -41,7 +41,7 @@ public class AppTest {
         assertNotNull(newItem);
     }
 
-    @Test void MarkToDoDone() throws InterruptedException {
+    @Test void MarkToDoDone() {
         WebElement item2 = driver.findElement(By.name("li2"));
         WebElement itemSpan2 = item2.findElement(By.xpath("/html/body/div/div/div/ul/li[2]/span"));
         assertTrue(itemSpan2.getAttribute("class").contains("done-false"));
